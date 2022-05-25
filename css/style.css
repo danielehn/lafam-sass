@@ -1,18 +1,32 @@
 * {
-  padding: 30;
-  margin: 30;
+  padding: 100;
+  margin: 100;
   box-sizing: border-box;
 }
 
 /* INICIO DE CSS INDEX  */
 body {
-  font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
-  background-image: url(../Logo/Logo-Lafam-uso-fondo-blanco.jpg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
 }
 
 .card img {
   height: 250px;
   width: 250px;
+}
+
+.boton-index {
+  margin-top: 2rem;
+  color: rgb(41, 37, 37);
+  background: rgb(228, 222, 213);
+  outline: none;
+  border: antiquewhite;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+
+.card p {
+  background-color: white;
 }
 
 ul {
@@ -96,16 +110,6 @@ nav ul {
   border-radius: 5px;
 }
 
-.boton-oft {
-  margin-top: 2rem;
-  color: rgb(41, 37, 37);
-  background: rgb(228, 222, 213);
-  outline: none;
-  border: antiquewhite;
-  padding: 1rem 0.5rem;
-  border-radius: 5px;
-}
-
 .boton-sol {
   margin-top: 2rem;
   color: rgb(41, 37, 37);
@@ -158,36 +162,30 @@ footer {
 }
 
 /* CSS de contacto */
-.grid-Formulario {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 2fr;
-  gap: 10;
-  grid-template-areas: "head head" "Formulario mapa" "footer footer";
+.titulo-contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  color: rgb(8, 198, 59);
 }
 
-.Formulario {
-  display: grid;
-  width: 1px;
-  height: 1px;
-  text-align: left;
-  grid-area: Formulario;
-  grid-template-columns: repeat(2, 2fr);
+.grid-formulario {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 2ch;
+  padding: 2ch;
 }
-
-.grid-Formulario img {
-  display: grid;
-  align-items: center;
+.grid-formulario .row-contacto {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
-
-.mapa {
+.grid-formulario .mapa-contacto img {
   display: grid;
-}
-
-.mapa img {
-  display: grid;
-  width: 400px;
-  grid-area: mapa;
+  width: 435px;
+  height: 350px;
 }
 
 /* fin de CSS de Contacto */
@@ -206,18 +204,25 @@ footer {
   justify-items: center;
 }
 
-.oftalmico article img {
+.row {
   display: flex;
-  width: 350px;
-  height: 250px;
-  border: solid black;
-  image-rendering: transparent;
+  border: black;
+  align-items: stretch;
+}
+
+.oftalmico article img {
+  display: grid;
+  width: 300px;
+  height: 200px;
+  border: rgb(0, 0, 0);
+  image-rendering: pixelated;
 }
 
 .card-oft img {
-  width: 350px;
-  height: 250px;
-  border: solid black;
+  display: flex;
+  width: 300px;
+  height: 200px;
+  border: solid rgb(0, 0, 0);
 }
 
 /* INICIO DE CSS DE GAFAS DE SOL */
